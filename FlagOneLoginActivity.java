@@ -22,14 +22,14 @@ public final class FlagOneLoginActivity extends androidx.appcompat.app.c {      
             if (FlagOneLoginActivity.this.F() == 0) {        // declares if condition,checks if the value returned by the method F() in the FlagOneLoginActivity class is equal to 0
                 Snackbar X = Snackbar.X(view, "The flag is right under your nose.", 0);        //reates a Snackbar object named X,along with the message
                 X.Y("Action", null);        //configures Snackbar by setting an action with the label Action and a null action listener
-                X.N();
-                FlagOneLoginActivity flagOneLoginActivity = FlagOneLoginActivity.this;
-                flagOneLoginActivity.G(flagOneLoginActivity.F() + 1);
-            } else if (FlagOneLoginActivity.this.F() == 1) {
-                Snackbar X2 = Snackbar.X(view, "The flag is also under the GUI.", 0);
-                X2.Y("Action", null);
-                X2.N();
-                FlagOneLoginActivity.this.G(0);
+                X.N();        //displays the configured Snackbar,N() method is often used to make the Snackbar visible
+                FlagOneLoginActivity flagOneLoginActivity = FlagOneLoginActivity.this;        //creates a new variable named flagOneLoginActivity and assigns it a reference to the current instance of the FlagOneLoginActivity class
+                flagOneLoginActivity.G(flagOneLoginActivity.F() + 1);        // updates state of FlagOneLoginActivity class,retrieves the current value using the F() method, increments it by 1, and then sets the updated value using the G() method
+            } else if (FlagOneLoginActivity.this.F() == 1) {        // line initiates else-if block.checks whether the value returned by the F() method in the FlagOneLoginActivity class is equal to 1
+                Snackbar X2 = Snackbar.X(view, "The flag is also under the GUI.", 0);    // creates a new Snackbar object named X2,it displays a message
+                X2.Y("Action", null);        //configures the Snackbar (X2) by setting an action with the label Action and a null action listener
+                X2.N();        //displays the configured Snackbar  (X2),N() method is often used to make the Snackbar visible
+                FlagOneLoginActivity.this.G(0);        //resetting the flag state value to 0
             }
         }
     }
