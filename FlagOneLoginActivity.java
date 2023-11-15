@@ -1,6 +1,6 @@
-package b3nac.injuredandroid;
+package b3nac.injuredandroid;        // package declaration
 
-import android.content.Intent;
+import android.content.Intent;        //importing classes and components,Intent is used for navigating between activities, Bundle is used for passing data between components
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -9,16 +9,16 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 /* loaded from: classes.dex */
-public final class FlagOneLoginActivity extends androidx.appcompat.app.c {
-    private int w;
+public final class FlagOneLoginActivity extends androidx.appcompat.app.c {        // declares a class named FlagOneLoginActivity
+    private int w;            // declares a private integer variable w, used to keep track of Flag state
 
     /* loaded from: classes.dex */
-    static final class a implements View.OnClickListener {
-        a() {
+    static final class a implements View.OnClickListener {            // declares class a that implements the View.OnClickListener interface, handles click events for a specific view
+        a() {            // constructor of class a
         }
 
         @Override // android.view.View.OnClickListener
-        public final void onClick(View view) {
+        public final void onClick(View view) {            //
             if (FlagOneLoginActivity.this.F() == 0) {
                 Snackbar X = Snackbar.X(view, "The flag is right under your nose.", 0);
                 X.Y("Action", null);
