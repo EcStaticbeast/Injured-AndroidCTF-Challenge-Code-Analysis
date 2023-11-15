@@ -18,10 +18,10 @@ public final class FlagOneLoginActivity extends androidx.appcompat.app.c {      
         }
 
         @Override // android.view.View.OnClickListener
-        public final void onClick(View view) {            //
-            if (FlagOneLoginActivity.this.F() == 0) {
-                Snackbar X = Snackbar.X(view, "The flag is right under your nose.", 0);
-                X.Y("Action", null);
+        public final void onClick(View view) {            //declaring a final method named onClick that takes a View parameter, and it does not return any value
+            if (FlagOneLoginActivity.this.F() == 0) {        // declares if condition,checks if the value returned by the method F() in the FlagOneLoginActivity class is equal to 0
+                Snackbar X = Snackbar.X(view, "The flag is right under your nose.", 0);        //reates a Snackbar object named X,along with the message
+                X.Y("Action", null);        //configures Snackbar by setting an action with the label Action and a null action listener
                 X.N();
                 FlagOneLoginActivity flagOneLoginActivity = FlagOneLoginActivity.this;
                 flagOneLoginActivity.G(flagOneLoginActivity.F() + 1);
