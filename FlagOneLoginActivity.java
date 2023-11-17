@@ -34,12 +34,12 @@ public final class FlagOneLoginActivity extends androidx.appcompat.app.c {      
         }
     }
 
-    public final int F() {
-        return this.w;
+    public final int F() {        // declares a method F()
+        return this.w;        //accessing the instance variable w and returns
     }
 
-    public final void G(int i) {
-        this.w = i;
+    public final void G(int i) {        //declares method G()
+        this.w = i;        //method G takes an integer argument and sets the value of the instance variable w to that integer value
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
