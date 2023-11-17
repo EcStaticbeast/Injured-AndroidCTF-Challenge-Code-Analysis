@@ -44,12 +44,12 @@ public final class FlagOneLoginActivity extends androidx.appcompat.app.c {      
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // androidx.appcompat.app.c, androidx.fragment.app.d, androidx.activity.ComponentActivity, androidx.core.app.e, android.app.Activity
-    public void onCreate(Bundle bundle) {
-        super.onCreate(bundle);
-        setContentView(R.layout.activity_flag_one_login);
-        j.j.a(this);
-        C((Toolbar) findViewById(R.id.toolbar));
-        ((FloatingActionButton) findViewById(R.id.fab)).setOnClickListener(new a());
+    public void onCreate(Bundle bundle) {        //method onCreate created and it overrides from the Activity class
+        super.onCreate(bundle);        //calls the onCreate method of the superclass Activity
+        setContentView(R.layout.activity_flag_one_login);        // this method sets the content view of the activity to the layout defined in activity_flag_one_login.xml
+        j.j.a(this);        // calling a method a() on an object j.j
+        C((Toolbar) findViewById(R.id.toolbar));        // finding a Toolbar view by its ID (R.id.toolbar) and passing it to a method named C()
+        ((FloatingActionButton) findViewById(R.id.fab)).setOnClickListener(new a());        // finds a FloatingActionButton by its ID (R.id.fab) and sets a click listener on it
     }
 
     public final void submitFlag(View view) {
