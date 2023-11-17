@@ -10,8 +10,8 @@ import com.google.android.material.snackbar.Snackbar;
 public class FlagTwoActivity extends androidx.appcompat.app.c {        //declaring class FlagTwoActivity which is inherited from androidx.appcompat.app.c
     int w = 0;        // Initializing integer variable w with the value 0
 
-    public /* synthetic */ void F(View view) {        //
-        int i = this.w;
+    public /* synthetic */ void F(View view) {        //declaring a method F() which assigns a parameter View to view
+        int i = this.w;        // initializing integer i with the current interface with variable w
         if (i == 0) {
             Snackbar X = Snackbar.X(view, "Key words Activity and exported.", 0);
             X.Y("Action", null);
