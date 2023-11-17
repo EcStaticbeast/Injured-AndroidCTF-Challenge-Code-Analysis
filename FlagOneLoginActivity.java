@@ -52,14 +52,14 @@ public final class FlagOneLoginActivity extends androidx.appcompat.app.c {      
         ((FloatingActionButton) findViewById(R.id.fab)).setOnClickListener(new a());        // finds a FloatingActionButton by its ID (R.id.fab) and sets a click listener on it
     }
 
-    public final void submitFlag(View view) {
-        EditText editText = (EditText) findViewById(R.id.editText2);
-        d.s.d.g.d(editText, "editText2");
-        if (d.s.d.g.a(editText.getText().toString(), "F1ag_0n3")) {
-            Intent intent = new Intent(this, FlagOneSuccess.class);
-            new FlagsOverview().J(true);
-            new j().b(this, "flagOneButtonColor", true);
-            startActivity(intent);
+    public final void submitFlag(View view) {        // method declared submitFlag with a View parameter named view
+        EditText editText = (EditText) findViewById(R.id.editText2);        // retrieves an EditText widget from the layout using its ID, which is specified as editText2
+        d.s.d.g.d(editText, "editText2");        // invokes a method d on an object s.d.g, passing the editText object and the string "editText2" as arguments
+        if (d.s.d.g.a(editText.getText().toString(), "F1ag_0n3")) {        // line checks if the text entered in the EditText widget is equal to the string "F1ag_0n3"
+            Intent intent = new Intent(this, FlagOneSuccess.class);        //  line creates an Intent to start a new activity, FlagOneSuccess
+            new FlagsOverview().J(true);        // creates a new instance of FlagsOverview and calls a method J on it, passing true as an argument
+            new j().b(this, "flagOneButtonColor", true);        //  creates a new instance of a class j and calls a method b on it, passing the current context (this), a string "flagOneButtonColor," and true as arguments
+            startActivity(intent);        // starts the activity specified by the intent, which would likely transition the user to the success screen FlagOneSuccess
         }
     }
 }
