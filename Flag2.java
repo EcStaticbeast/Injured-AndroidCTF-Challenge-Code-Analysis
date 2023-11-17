@@ -1,16 +1,16 @@
-package b3nac.injuredandroid;
+package b3nac.injuredandroid;        // declaring the package
 
-import android.os.Bundle;
+import android.os.Bundle;        //importing classes and components
 import android.view.View;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 /* loaded from: classes.dex */
-public class FlagTwoActivity extends androidx.appcompat.app.c {
-    int w = 0;
+public class FlagTwoActivity extends androidx.appcompat.app.c {        //declaring class FlagTwoActivity which is inherited from androidx.appcompat.app.c
+    int w = 0;        // Initializing integer variable w with the value 0
 
-    public /* synthetic */ void F(View view) {
+    public /* synthetic */ void F(View view) {        //
         int i = this.w;
         if (i == 0) {
             Snackbar X = Snackbar.X(view, "Key words Activity and exported.", 0);
