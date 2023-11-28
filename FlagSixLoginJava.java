@@ -12,7 +12,7 @@ public class FlagSixLoginJava {        // declares a class FlagSixLoginJava
     public static String decryptFlag(String encodedFlag, byte[] key) {    // Decrypts an encoded flag using the provided key and returns the decrypted flag as a String.
         try {
             SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");    //creats instance of SecretKeyFactory specifically to work with the DES encryption,keyFactory variable is of type SecretKeyFactory that will hold instance of SecretKeyFactory class
-            SecretKey generateSecret = keyFactory.generateSecret(new SecretKeySpec(key, "DES"));
+            SecretKey generateSecret = keyFactory.generateSecret(new SecretKeySpec(key, "DES"));    // 
             Cipher cipher = Cipher.getInstance("DES");
             cipher.init(Cipher.DECRYPT_MODE, generateSecret);
             byte[] decodedBytes = cipher.doFinal(Base64.getDecoder().decode(encodedFlag));
