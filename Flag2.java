@@ -12,9 +12,9 @@ public class FlagTwoActivity extends androidx.appcompat.app.c {        //declari
 
     public /* synthetic */ void F(View view) {        //declaring a method F() which assigns a parameter View to view
         int i = this.w;        // initializing integer i with the current interface with variable w
-        if (i == 0) {
-            Snackbar X = Snackbar.X(view, "Key words Activity and exported.", 0);
-            X.Y("Action", null);
+        if (i == 0) {        // if conditional block,if the value of integer i is 0 then execute if block
+            Snackbar X = Snackbar.X(view, "Key words Activity and exported.", 0);    // creates a snackbar, initiates the snackbar with the message
+            X.Y("Action", null);        //
             X.N();
             this.w++;
         } else if (i == 1) {
