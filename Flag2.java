@@ -27,14 +27,14 @@ public class FlagTwoActivity extends androidx.appcompat.app.c {        //declari
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // androidx.appcompat.app.c, androidx.fragment.app.d, androidx.activity.ComponentActivity, androidx.core.app.e, android.app.Activity
-    public void onCreate(Bundle bundle) {
-        super.onCreate(bundle);
-        setContentView(R.layout.activity_flag_two);
-        C((Toolbar) findViewById(R.id.toolbar));
-        ((FloatingActionButton) findViewById(R.id.fab)).setOnClickListener(new View.OnClickListener() { // from class: b3nac.injuredandroid.d
+    public void onCreate(Bundle bundle) {        // Oncreate method is created,declares Bundle with the name bundle
+        super.onCreate(bundle);        //bundle methods is called as a super class
+        setContentView(R.layout.activity_flag_two);    // content view is created
+        C((Toolbar) findViewById(R.id.toolbar));        //method c is called and view id is specified as R.id.toolbar
+        ((FloatingActionButton) findViewById(R.id.fab)).setOnClickListener(new View.OnClickListener() { // from class: b3nac.injuredandroid.d    // OnClickListener is set for the FloatingActionButton with the ID R.id.fab
             @Override // android.view.View.OnClickListener
-            public final void onClick(View view) {
-                FlagTwoActivity.this.F(view);
+            public final void onClick(View view) {        //onClick method is initiated with View parameter named view
+                FlagTwoActivity.this.F(view);       // Call the F() method in the class FlagTwoActivity, passing view parameter
             }
         });
     }
