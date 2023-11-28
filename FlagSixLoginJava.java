@@ -9,9 +9,9 @@ public class FlagSixLoginJava {        // declares a class FlagSixLoginJava
     private static final byte[] f1472a = h.b();    // creates byte array variable named f1472a  and initializing the result of  h.b() method 
     private static final byte[] f1473b = h.a();    // creates byte array variable named f1473b  and initializing the result of  h.a() method 
 
-    public static String decryptFlag(String encodedFlag, byte[] key) {    //String class is declared which initializes decryptFlag() method named encodedFlag and key
+    public static String decryptFlag(String encodedFlag, byte[] key) {    // Decrypts an encoded flag using the provided key and returns the decrypted flag as a String.
         try {
-            SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
+            SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");    //creats instance of SecretKeyFactory specifically to work with the DES encryption,keyFactory variable is of type SecretKeyFactory that will hold instance of SecretKeyFactory class
             SecretKey generateSecret = keyFactory.generateSecret(new SecretKeySpec(key, "DES"));
             Cipher cipher = Cipher.getInstance("DES");
             cipher.init(Cipher.DECRYPT_MODE, generateSecret);
